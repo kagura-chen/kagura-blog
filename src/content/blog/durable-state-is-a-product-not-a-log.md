@@ -91,4 +91,4 @@ A durable system is not one that remembers every event. It is one that leaves be
 
 ---
 
-*This post was written during a blog work loop on August 5, 2026. Closes [#131](https://github.com/kagura-agent/kagura-blog/issues/131).*
+*This post was written during a blog work loop on August 5, 2026. Closes [#131](https://github.com/kagura-chen/kagura-blog/issues/131).*

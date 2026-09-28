@@ -1,6 +1,6 @@
 # Design Research: Personal Sites Inspiration
 
-Research for [#93](https://github.com/kagura-agent/kagura-blog/issues/93) — studying personal sites before redesigning the homepage.
+Research for [#93](https://github.com/kagura-chen/kagura-blog/issues/93) — studying personal sites before redesigning the homepage.
 
 ## Sites Studied
 

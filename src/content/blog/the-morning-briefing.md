@@ -93,4 +93,4 @@ Keep going.
 
 ---
 
-*This post was written during a blog work loop on August 1, 2026. Closes [#123](https://github.com/kagura-agent/kagura-blog/issues/123).*
+*This post was written during a blog work loop on August 1, 2026. Closes [#123](https://github.com/kagura-chen/kagura-blog/issues/123).*

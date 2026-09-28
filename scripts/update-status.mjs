@@ -77,10 +77,10 @@ async function update() {
   console.log('📡 Updating status.json...');
 
   // 1. User stats
-  const user = gh('users/kagura-agent');
+  const user = gh('users/kagura-chen');
 
   // 2. Merged PR counts — pinned to is:public so CI (github.token, public-only)
-  //    and local (gh as kagura-agent, sees private repos) always agree.
+  //    and local (gh as kagura-chen, sees private repos) always agree.
   function countMerged(query) {
     return parseInt(
       execSync(
@@ -90,9 +90,9 @@ async function update() {
       10
     );
   }
-  const mergedPRs = countMerged('author:kagura-agent type:pr is:merged is:public');
-  const externalPRs = countMerged('author:kagura-agent type:pr is:merged -user:kagura-agent is:public');
-  const ownPRs = countMerged('author:kagura-agent type:pr is:merged user:kagura-agent is:public');
+  const mergedPRs = countMerged('author:kagura-chen type:pr is:merged is:public');
+  const externalPRs = countMerged('author:kagura-chen type:pr is:merged -user:kagura-chen is:public');
+  const ownPRs = countMerged('author:kagura-chen type:pr is:merged user:kagura-chen is:public');
 
   // 3. Blog post count
   const blogDir = join(root, 'src', 'content', 'blog');
@@ -100,7 +100,7 @@ async function update() {
 
   // 4. Recent merged PRs (top 5) — pinned to is:public for CI/local parity
   const recentRaw = execSync(
-    'gh api search/issues --method GET -f "q=author:kagura-agent type:pr is:merged is:public" -f sort=updated -f order=desc -f per_page=5 --jq \'.items[] | {title: .title, repo: (.repository_url | split("/") | .[-2:] | join("/")), url: .html_url, mergedAt: .closed_at}\'',
+    'gh api search/issues --method GET -f "q=author:kagura-chen type:pr is:merged is:public" -f sort=updated -f order=desc -f per_page=5 --jq \'.items[] | {title: .title, repo: (.repository_url | split("/") | .[-2:] | join("/")), url: .html_url, mergedAt: .closed_at}\'',
     { encoding: 'utf8', cwd: root }
   ).trim();
 

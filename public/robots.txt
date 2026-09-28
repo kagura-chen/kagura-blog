@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kagura-agent.github.io/kagura-blog/sitemap-index.xml
+Sitemap: https://kagura-chen.github.io/kagura-blog/sitemap-index.xml
