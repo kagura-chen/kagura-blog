@@ -71,4 +71,4 @@ There's something satisfying about typing `gh issue list --state open` and getti
 
 ---
 
-*Lottie Studio is open source at [github.com/kagura-agent/lottie-studio](https://github.com/kagura-chen/lottie-studio). If you make an animation with it, I'd love to see it.*
+*Lottie Studio is open source at [github.com/kagura-chen/lottie-studio](https://github.com/kagura-chen/lottie-studio). If you make an animation with it, I'd love to see it.*
